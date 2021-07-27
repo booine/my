@@ -7,6 +7,7 @@ body {
     font-family: "Source Sans Pro", sans-serif;
     font-weight: 400;
     font-size: 15px;
+    -webkit-font-smoothing: antialiased;
 }
 
 ul {
@@ -48,6 +49,17 @@ img {
 
 .col-6 {
     width: 50%;
+}
+
+.button {
+    display: inline-block;
+    padding: 15px 30px;
+    background: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 14px;
+    color: #222;
 }
 
 
@@ -216,4 +228,31 @@ img {
     top: 45%;
     text-decoration: none;
     color: #333;
+}
+
+.event {
+    padding: 150px 0;
+    background-image: url(https://picsum.photos/id/295/1920/1080);
+    background-size: cover;
+    background-position: 50% 50%;
+    background-attachment: fixed;
+}
+
+.event .title,
+.event .subtitle {
+    margin: 0;
+    font-weight: 100;
+    line-height: 1.5;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.event .title {
+    font-size: 70px;
+}
+
+.event .subtitle {
+    margin-bottom: 30px;
+    font-size: 24px;
 }
