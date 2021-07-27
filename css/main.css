@@ -320,4 +320,34 @@ p {
     font-size: 26px;
     font-weight: 100;
 
+
+
+}
+
+.outlets {
+    padding-bottom: 100px;
+}
+
+.outlet h3 {
+    margin: 0;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: normal;
+}
+
+.outlet .info {
+    color: #7e7e7e;
+    line-height: 30px;
+}
+
+.outlet .info a {
+    color: #7e7e7e;
+    text-decoration: none;
+}
+
+.outlet .map a {
+    color: #d6b161;
+    text-transform: uppercase;
+    text-decoration: none;
 }
