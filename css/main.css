@@ -7,6 +7,7 @@ body {
     font-family: "Source Sans Pro", sans-serif;
     font-weight: 400;
     font-size: 15px;
+    line-height: 1.5;
     -webkit-font-smoothing: antialiased;
 }
 
@@ -350,4 +351,60 @@ p {
     color: #d6b161;
     text-transform: uppercase;
     text-decoration: none;
+}
+
+
+/* footer */
+#footer {
+    padding: 80px 0;
+    background: #f5f5f5;
+    position: relative;
+}
+
+#footer .logo {
+    padding: 20px;
+    background: #fff;
+    border: 5px solid #f5f5f5;
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    /* css3:transform 2D/3D變形：translate位移。 */
+}
+
+#footer .copyright {
+    float: left;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#footer .copyright .title {
+    color: #000;
+    font-size: 14px;
+}
+
+#footer .copyright .subtitle {
+    font-size: 12px;
+    color: #323232;
+}
+
+#footer .social-media {
+    float: right;
+}
+
+#footer .social-media li {
+    float: left;
+}
+
+#footer .social-media a {
+    display: inline-block;
+    margin: 10px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #222;
+    border-radius: 20px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 40px;
+    color: #222;
 }
