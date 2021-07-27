@@ -408,3 +408,22 @@ p {
     line-height: 40px;
     color: #222;
 }
+
+#go-top {
+    position: fixed;
+    /* 設定position:fixed後，inline element會變成 inline-block element！ */
+    right: 20px;
+    bottom: 35px;
+    width: 40px;
+    height: 40px;
+    background: rgba(0, 0, 0, .6);
+    text-align: center;
+    text-decoration: none;
+    line-height: 40px;
+    color: #fff;
+    transition: all .2s linear;
+}
+
+#go-top:hover {
+    background: #d6b161;
+}
