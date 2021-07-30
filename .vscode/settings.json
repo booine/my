@@ -9,5 +9,7 @@
     "extensionName": ".css",
     "savePath": "/css"
   }],
+    "liveSassCompile.settings.excludeList": ["**/node_modules/**", ".vscode/**"
+  ],
 }
 

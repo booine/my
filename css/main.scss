@@ -1,3 +1,5 @@
+$gray-text:#7e7e7e;
+
 * {
     box-sizing: border-box;
     font-family: 'Source Sans Pro', sans-serif;
@@ -22,9 +24,10 @@ img {
 }
 
 p {
-    color: #7e7e7e;
+    color: $gray-text;
     line-height: 30px;
 }
+
 
 /* custom class */
 .container {
@@ -77,8 +80,8 @@ p {
     }
 }
 
-/* header */
 
+/* header */
 #logo {
     float: left;
 }
@@ -110,8 +113,8 @@ p {
     padding: 0 12px;
 }
 
-/* content */
 
+/* content */
 #content> {
     div {
         padding-top: 100px;
@@ -125,6 +128,58 @@ p {
         margin: 0;
         border-top: 1px solid #eee;
     }
+
+    div.header {
+        padding: 200px 0;
+        background-image: url(https://picsum.photos/id/852/1920/1080);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50%;
+
+        .title {
+            float: left;
+            margin: 0%;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: normal;
+            font-size: 24px;
+            color: white;
+        }
+
+        #breadcrumbs {
+            float: right;
+            padding: 15px;
+            background: rgba(0, 0, 0, .5);
+            border-radius: 3px;
+            font-size: 12px;
+
+            li {
+                float: left;
+                text-transform: uppercase;
+                color: white;
+
+                &::after {
+                    content: "/";
+                    margin: 0 5px;
+                }
+
+                &:last-child {
+                    &::after {
+                        content: "";
+                    }
+                }
+
+            }
+
+            a {
+                color: $gray-text;
+                text-decoration: none;
+            }
+        }
+
+    }
+
+
 }
 
 .slider img {
@@ -157,7 +212,7 @@ p {
     p {
         margin: 0;
         margin-top: 25px;
-        color: #7e7e7e;
+        color: $gray-text;
     }
 }
 
@@ -216,7 +271,7 @@ p {
         letter-spacing: 1px;
         font-size: 12px;
         line-height: 30px;
-        color: #7e7e7e;
+        color: $gray-text;
     }
 }
 
@@ -347,11 +402,11 @@ p {
     }
 
     .info {
-        color: #7e7e7e;
+        color: $gray-text;
         line-height: 30px;
 
         a {
-            color: #7e7e7e;
+            color: $gray-text;
             text-decoration: none;
         }
     }

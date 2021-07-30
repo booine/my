@@ -116,6 +116,45 @@ p {
   margin: 0;
   border-top: 1px solid #eee;
 }
+#content > div.header {
+  padding: 200px 0;
+  background-image: url(https://picsum.photos/id/852/1920/1080);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+#content > div.header .title {
+  float: left;
+  margin: 0%;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: normal;
+  font-size: 24px;
+  color: white;
+}
+#content > div.header #breadcrumbs {
+  float: right;
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 3px;
+  font-size: 12px;
+}
+#content > div.header #breadcrumbs li {
+  float: left;
+  text-transform: uppercase;
+  color: white;
+}
+#content > div.header #breadcrumbs li::after {
+  content: "/";
+  margin: 0 5px;
+}
+#content > div.header #breadcrumbs li:last-child::after {
+  content: "";
+}
+#content > div.header #breadcrumbs a {
+  color: #7e7e7e;
+  text-decoration: none;
+}
 
 .slider img {
   width: 100%;
