@@ -1,0 +1,13 @@
+{
+    "compile-hero.disable-compile-files-on-did-save-code": false,
+    "liveSassCompile.settings.autoprefix": [
+    "> 1%",
+    "ie 10"
+  ],
+    "liveSassCompile.settings.formats": [{
+    "format": "expanded",
+    "extensionName": ".css",
+    "savePath": "/css"
+  }],
+}
+

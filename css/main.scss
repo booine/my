@@ -27,11 +27,14 @@ p {
 }
 
 /* custom class */
-
 .container {
     display: block;
     width: 1170px;
     margin: 0 auto;
+
+    &.full-width {
+        width: 100%;
+    }
 }
 
 .clearfix::after {
