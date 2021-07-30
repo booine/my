@@ -20,10 +20,12 @@ ul {
 
 img {
   display: block;
+  width: 100%;
 }
 
 p {
   color: #7e7e7e;
+  margin: 0;
   line-height: 30px;
 }
 
@@ -37,7 +39,8 @@ p {
   width: 100%;
 }
 
-.clearfix::after {
+.clearfix::after,
+.row::after {
   content: "";
   display: table;
   clear: both;
@@ -48,9 +51,10 @@ p {
 }
 
 .col-4,
-.col-6 {
+.col-6,
+.col-12 {
   float: left;
-  padding: 0 10px;
+  padding: 0 30px;
 }
 
 .col-4 {
@@ -59,6 +63,10 @@ p {
 
 .col-6 {
   width: 50%;
+}
+
+.col-12 {
+  width: 100%;
 }
 
 .button {
@@ -112,18 +120,25 @@ p {
 #content > div:first-child {
   padding-top: 0px;
 }
-#content > hr {
+#content hr {
   margin: 0;
   border-top: 1px solid #eee;
 }
-#content > div.header {
+#content h3.title {
+  margin-top: 0%;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: normal;
+  font-size: 24px;
+}
+#content div.header {
   padding: 200px 0;
   background-image: url(https://picsum.photos/id/852/1920/1080);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50%;
 }
-#content > div.header .title {
+#content div.header .title {
   float: left;
   margin: 0%;
   text-transform: uppercase;
@@ -132,26 +147,26 @@ p {
   font-size: 24px;
   color: white;
 }
-#content > div.header #breadcrumbs {
+#content div.header #breadcrumbs {
   float: right;
   padding: 15px;
   background: rgba(0, 0, 0, 0.5);
   border-radius: 3px;
   font-size: 12px;
 }
-#content > div.header #breadcrumbs li {
+#content div.header #breadcrumbs li {
   float: left;
   text-transform: uppercase;
   color: white;
 }
-#content > div.header #breadcrumbs li::after {
+#content div.header #breadcrumbs li::after {
   content: "/";
   margin: 0 5px;
 }
-#content > div.header #breadcrumbs li:last-child::after {
+#content div.header #breadcrumbs li:last-child::after {
   content: "";
 }
-#content > div.header #breadcrumbs a {
+#content div.header #breadcrumbs a {
   color: #7e7e7e;
   text-decoration: none;
 }
@@ -190,6 +205,7 @@ p {
 .category {
   position: relative;
   margin-bottom: 20px;
+  padding: 0 10px;
 }
 .category img {
   width: 100%;
@@ -215,6 +231,9 @@ p {
   float: left;
 }
 
+.product {
+  padding: 0 10px;
+}
 .product .info {
   padding: 15px 0;
   text-align: center;

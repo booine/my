@@ -21,10 +21,12 @@ ul {
 
 img {
     display: block;
+    width: 100%;
 }
 
 p {
     color: $gray-text;
+    margin: 0;
     line-height: 30px;
 }
 
@@ -40,10 +42,13 @@ p {
     }
 }
 
-.clearfix::after {
-    content: "";
-    display: table;
-    clear: both;
+.clearfix,
+.row {
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
 }
 
 .row {
@@ -51,9 +56,10 @@ p {
 }
 
 .col-4,
-.col-6 {
+.col-6,
+.col-12 {
     float: left;
-    padding: 0 10px;
+    padding: 0 30px;
 }
 
 .col-4 {
@@ -62,6 +68,10 @@ p {
 
 .col-6 {
     width: 50%;
+}
+
+.col-12 {
+    width: 100%;
 }
 
 .button {
@@ -115,8 +125,8 @@ p {
 
 
 /* content */
-#content> {
-    div {
+#content {
+    >div {
         padding-top: 100px;
 
         &:first-child {
@@ -127,6 +137,14 @@ p {
     hr {
         margin: 0;
         border-top: 1px solid #eee;
+    }
+
+    h3.title {
+        margin-top: 0%;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: normal;
+        font-size: 24px;
     }
 
     div.header {
@@ -219,6 +237,7 @@ p {
 .category {
     position: relative;
     margin-bottom: 20px;
+    padding: 0 10px;
 
     img {
         width: 100%;
@@ -249,6 +268,8 @@ p {
 }
 
 .product {
+    padding: 0 10px;
+
     .info {
         padding: 15px 0;
         text-align: center;
