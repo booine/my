@@ -22,6 +22,9 @@
 .about #content .feature p {
   color: white;
 }
+.about #content .team-menber {
+  padding: 100px 0;
+}
 .about #content .member .name {
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -57,6 +60,22 @@
 .about #content .cover .social-media a {
   text-decoration: none;
   color: #222;
+}
+.about #content .gray-bg {
+  padding: 100px 0;
+  text-align: center;
+}
+.about #content .gray-bg .count {
+  font-size: 36px;
+}
+.about #content .gray-bg h4 {
+  margin: 0;
+  color: #323232;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+.about #content .clients {
+  padding: 100px 0;
 }
 
 * {
@@ -109,11 +128,21 @@ p {
   margin: 0 -10px;
 }
 
+.col-2,
+.col-3,
 .col-4,
 .col-6,
 .col-12 {
   float: left;
   padding: 0 30px;
+}
+
+.col-2 {
+  width: 16.6666666667%;
+}
+
+.col-3 {
+  width: 25%;
 }
 
 .col-4 {
@@ -215,17 +244,24 @@ p {
 #content > div {
   padding-top: 100px;
 }
+#content > div.full-padding {
+  padding: 100px 0;
+}
+#content > div.gray-bg {
+  background: #f5f5f5;
+}
 #content > div:first-child {
   padding-top: 0px;
 }
-#content hr {
+#content > hr {
   margin: 0;
   border-top: 1px solid #eee;
 }
-#content h3.title {
+#content > h3.title {
   margin-top: 0%;
   text-transform: uppercase;
   letter-spacing: 2px;
+  font-weight: normal;
   font-size: 24px;
 }
 #content div.header {
