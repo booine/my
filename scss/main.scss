@@ -1,4 +1,7 @@
-$gray-text:#7e7e7e;
+@use 'about';
+@use 'basic'as *;
+
+
 
 * {
     box-sizing: border-box;
@@ -114,7 +117,7 @@ p {
     }
 
     .active a {
-        color: #d6b161;
+        color: $branding-color;
     }
 }
 
@@ -425,7 +428,7 @@ p {
 
         .title,
         .price {
-            color: #d6b161;
+            color: $branding-color;
         }
 
         .name {
@@ -477,7 +480,7 @@ p {
     }
 
     .map a {
-        color: #d6b161;
+        color: $branding-color;
         text-transform: uppercase;
         text-decoration: none;
     }
@@ -556,6 +559,6 @@ p {
     transition: all .2s linear;
 
     &:hover {
-        background: #d6b161;
+        background: $branding-color;
     }
 }

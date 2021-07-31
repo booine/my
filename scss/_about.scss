@@ -1,0 +1,36 @@
+@use 'basic'as *;
+
+
+
+.about {
+    #content {
+        .feature {
+            padding: 100px 0;
+            background-image: url(https://picsum.photos/id/851/1920/1080);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: 50%;
+            text-align: center;
+            color: white;
+
+            .title {
+                font-size: 18px;
+                letter-spacing: 1px;
+
+            }
+
+            i {
+                display: inline-block;
+                padding-bottom: 30px;
+                font-size: 36px;
+                color: $branding-color;
+            }
+
+            p {
+                color: white;
+            }
+        }
+    }
+
+}
