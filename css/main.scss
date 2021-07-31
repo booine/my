@@ -21,7 +21,7 @@ ul {
 
 img {
     display: block;
-    width: 100%;
+
 }
 
 p {
@@ -123,6 +123,50 @@ p {
     padding: 0 12px;
 }
 
+.progress-bar {
+    background: #eae8e8;
+    margin-bottom: 50px;
+    position: relative;
+
+    >div {
+        display: inline-block;
+    }
+
+    .progress {
+        padding-left: 10px;
+        background: black;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 10px;
+        line-height: 24px;
+        color: white;
+    }
+
+    .pin {
+        padding: 2px 5px;
+        background: #666;
+        border-radius: 15px;
+        position: relative;
+        // posotion:relative=以原本的位子為基準，做相對移動。
+        top: -35px;
+        left: -25px;
+        font-size: 12px;
+        color: white;
+    }
+
+    .arrow {
+        width: 0px;
+        height: 0px;
+        border-top: 5px solid #666;
+        border-right: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        border-left: 5px solid transparent;
+        position: relative;
+        // posotion:relative=以原本的位子為基準，做相對移動。
+        top: -19px;
+        left: -50px;
+    }
+}
 
 /* content */
 #content {
