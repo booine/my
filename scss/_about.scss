@@ -31,6 +31,54 @@
                 color: white;
             }
         }
-    }
 
+        .member {
+            .name {
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                font-weight: normal;
+                font-size: 14px;
+                color: #333;
+            }
+
+            .title {
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                font-size: 12px;
+                color: #a5a5a5;
+            }
+        }
+
+        .cover {
+            h3 {
+                margin: 35px 0;
+                font-weight: normal;
+                font-size: 14px;
+                letter-spacing: 4px;
+            }
+
+            .social-media {
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                text-align: center;
+
+                ul {
+                    display: inline-block;
+                }
+
+                li {
+                    float: left;
+                    margin: 0 10px;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: #222;
+                }
+            }
+        }
+
+
+    }
 }

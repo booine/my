@@ -190,7 +190,6 @@ p {
         margin-top: 0%;
         text-transform: uppercase;
         letter-spacing: 2px;
-        font-weight: normal;
         font-size: 24px;
     }
 
@@ -279,6 +278,19 @@ p {
         margin-top: 25px;
         color: $gray-text;
     }
+
+    &.big {
+        h2 {
+            padding: 0%;
+        }
+
+        p {
+            margin: 0%;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 14px;
+        }
+    }
 }
 
 .category {
@@ -350,7 +362,7 @@ p {
         width: 100%;
     }
 
-    .cover {
+    >.cover {
         text-align: center;
         position: absolute;
         top: 0px;
@@ -370,7 +382,7 @@ p {
             opacity: 1;
         }
 
-        a {
+        >a {
             position: relative;
             top: 45%;
             text-decoration: none;

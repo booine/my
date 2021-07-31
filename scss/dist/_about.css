@@ -1,0 +1,59 @@
+.about #content .feature {
+  padding: 100px 0;
+  background-image: url(https://picsum.photos/id/851/1920/1080);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 50%;
+  text-align: center;
+  color: white;
+}
+.about #content .feature .title {
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+.about #content .feature i {
+  display: inline-block;
+  padding-bottom: 30px;
+  font-size: 36px;
+  color: #d6b161;
+}
+.about #content .feature p {
+  color: white;
+}
+.about #content .member .name {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: normal;
+  font-size: 14px;
+  color: #333;
+}
+.about #content .member .title {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 12px;
+  color: #a5a5a5;
+}
+.about #content .cover h3 {
+  margin: 35px 0;
+  font-weight: normal;
+  font-size: 14px;
+  letter-spacing: 4px;
+}
+.about #content .cover .social-media {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+.about #content .cover .social-media ul {
+  display: inline-block;
+}
+.about #content .cover .social-media li {
+  float: left;
+  margin: 0 10px;
+}
+.about #content .cover .social-media a {
+  text-decoration: none;
+  color: #222;
+}
