@@ -13,7 +13,7 @@
   letter-spacing: 1px;
 }
 .about #content .feature i {
-  display: inline-block;
+  display: block;
   padding-bottom: 30px;
   font-size: 36px;
   color: #d6b161;
@@ -75,4 +75,7 @@
 }
 .about #content .clients {
   padding: 100px 0;
+}
+.about .summary i {
+  font-size: 36px;
 }

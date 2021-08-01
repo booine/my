@@ -383,7 +383,7 @@ p {
         width: 100%;
     }
 
-    >.cover {
+    .cover {
         text-align: center;
         position: absolute;
         top: 0px;
@@ -405,9 +405,9 @@ p {
 
         >a {
             position: relative;
-            top: 45%;
+            top: 40%;
             text-decoration: none;
-            font-size: 35px;
+            font-size: 32px;
             color: #333;
         }
     }

@@ -14,7 +14,7 @@
   letter-spacing: 1px;
 }
 .about #content .feature i {
-  display: inline-block;
+  display: block;
   padding-bottom: 30px;
   font-size: 36px;
   color: #d6b161;
@@ -76,6 +76,9 @@
 }
 .about #content .clients {
   padding: 100px 0;
+}
+.about .summary i {
+  font-size: 36px;
 }
 
 * {
@@ -404,7 +407,7 @@ p {
 .thumbnail img {
   width: 100%;
 }
-.thumbnail > .cover {
+.thumbnail .cover {
   text-align: center;
   position: absolute;
   top: 0px;
@@ -418,14 +421,14 @@ p {
   transition: all 0.3s linear;
   /* css3新功能：transition漸變效果 */
 }
-.thumbnail > .cover:hover {
+.thumbnail .cover:hover {
   opacity: 1;
 }
-.thumbnail > .cover > a {
+.thumbnail .cover > a {
   position: relative;
-  top: 45%;
+  top: 40%;
   text-decoration: none;
-  font-size: 35px;
+  font-size: 32px;
   color: #333;
 }
 

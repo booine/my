@@ -21,7 +21,7 @@
             }
 
             i {
-                display: inline-block;
+                display: block;
                 padding-bottom: 30px;
                 font-size: 36px;
                 color: basic.$branding-color;
@@ -103,5 +103,11 @@
             padding: 100px 0;
         }
 
+    }
+
+    .summary {
+        i {
+            font-size: 36px;
+        }
     }
 }
