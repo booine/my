@@ -257,7 +257,7 @@ p {
   margin: 0;
   border-top: 1px solid #eee;
 }
-#content > h3.title {
+#content h3.title {
   margin-top: 0%;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -564,6 +564,79 @@ p {
   text-align: center;
   line-height: 40px;
   color: #222;
+}
+
+#footer.dark {
+  padding: 0%;
+  background: #222;
+}
+#footer.dark .info {
+  padding: 80px 0;
+}
+#footer.dark .info .title {
+  margin: 0;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: normal;
+  font-size: 14px;
+  color: white;
+}
+#footer.dark .info .common-list li {
+  border-bottom: 1px solid #333;
+}
+#footer.dark .info .common-list a {
+  display: block;
+  color: #a2a2a2;
+  text-decoration: none;
+  text-transform: capitalize;
+  line-height: 45px;
+  transition: all 0.2s linear;
+}
+#footer.dark .info .common-list a:hover {
+  color: #d6b161;
+}
+#footer.dark .info .common-list a::before {
+  content: ">";
+  margin-right: 10px;
+}
+#footer.dark .info .thumbnails li {
+  float: left;
+  line-height: 0;
+}
+#footer.dark .info .thumbnails li a {
+  display: inline-block;
+  margin: 0 10px 10px 0;
+}
+#footer.dark p {
+  margin-top: 20px;
+  color: #6f7273;
+}
+#footer.dark .bottom {
+  padding: 35px 0;
+  background: #1b1b1b;
+}
+#footer.dark .bottom .title {
+  color: #6f7273;
+  text-transform: capitalize;
+  letter-spacing: 0;
+  margin-top: 10px;
+}
+#footer.dark .bottom .important a {
+  color: white;
+  text-transform: capitalize;
+  text-decoration: none;
+  transition: all 0.2s linear;
+}
+#footer.dark .bottom .important a:hover {
+  color: #d6b161;
+}
+#footer.dark .social-media a {
+  margin: 0;
+  margin-left: 10px;
+  border-color: #6f7273;
+  font-size: 20px;
+  color: #6f7273;
 }
 
 #go-top {
