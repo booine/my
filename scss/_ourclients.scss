@@ -106,24 +106,7 @@
                     margin-top: 10px;
                 }
             }
-
         }
-
-        .button {
-            &.black {
-                border: 0px;
-                border-radius: 3px;
-                background: #222;
-                color: white;
-                transition: all .2s linear;
-
-                &:hover {
-                    background: basic.$branding-color;
-                }
-            }
-
-        }
-
     }
 
     .summary {

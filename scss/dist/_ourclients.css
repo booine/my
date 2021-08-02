@@ -80,16 +80,6 @@
 .ourclients #content .joinous .tobe p {
   margin-top: 10px;
 }
-.ourclients #content .button.black {
-  border: 0px;
-  border-radius: 3px;
-  background: #222;
-  color: white;
-  transition: all 0.2s linear;
-}
-.ourclients #content .button.black:hover {
-  background: #d6b161;
-}
 .ourclients .summary i {
   font-size: 36px;
 }
