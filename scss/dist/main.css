@@ -403,9 +403,6 @@ p {
 #content div.header #breadcrumbs li.black {
   color: #000;
 }
-#content div.header #breadcrumbs li.f5f5, #content div.header #breadcrumbs li.black {
-  letter-spacing: 1px;
-}
 #content div.header #breadcrumbs li::after {
   content: "/";
   margin: 0 5px;

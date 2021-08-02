@@ -282,11 +282,6 @@ p {
                     color: #000;
                 }
 
-                &.f5f5,
-                &.black {
-                    letter-spacing: 1px;
-                }
-
                 &::after {
                     content: "/";
                     margin: 0 5px;
