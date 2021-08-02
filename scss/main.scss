@@ -1,4 +1,5 @@
 @use 'about';
+@use 'ourclients';
 @use 'basic';
 // @use 'basic'，凡是引入變數的partial，還需要在變數前方加上「變數檔案的namespace.」-->「 basic.+變數名稱 」，例如：「 basic.$gray-text 」，才能compile成功唷～
 // 另外，語法 as *-->「@use 'basic' as *」 雖讓你可以不需使用 namespace. 就可存取變數，但也會造成維護不易，特別是專案越來越複雜之下，當變數一多容易產生命名的衝突。
@@ -310,6 +311,14 @@ p {
             text-transform: uppercase;
             letter-spacing: 2px;
             font-size: 14px;
+        }
+    }
+
+    &.bo-margin {
+        margin-bottom: 50px;
+
+        h2 {
+            padding: 0px;
         }
     }
 }
