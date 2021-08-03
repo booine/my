@@ -265,7 +265,7 @@ p {
             letter-spacing: 1px;
             font-size: 12px;
 
-            &.no-bg {
+            &.transparent {
                 background: transparent;
             }
 
@@ -308,7 +308,12 @@ p {
         padding: 100px 0;
 
         .member {
+            .info {
+                padding: 20px 0;
+            }
+
             .name {
+                margin: 0 0 5px 0;
                 text-transform: uppercase;
                 letter-spacing: 1px;
                 font-weight: normal;

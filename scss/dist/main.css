@@ -389,7 +389,7 @@ p {
   letter-spacing: 1px;
   font-size: 12px;
 }
-#content div.header #breadcrumbs.no-bg {
+#content div.header #breadcrumbs.transparent {
   background: transparent;
 }
 #content div.header #breadcrumbs li {
@@ -417,7 +417,11 @@ p {
 #content .team-member {
   padding: 100px 0;
 }
+#content .team-member .member .info {
+  padding: 20px 0;
+}
 #content .team-member .member .name {
+  margin: 0 0 5px 0;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: normal;
