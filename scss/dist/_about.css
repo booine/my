@@ -5,21 +5,6 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: 50%;
-  text-align: center;
-  color: white;
-}
-.about #content .feature .title {
-  font-size: 18px;
-  letter-spacing: 1px;
-}
-.about #content .feature i {
-  display: block;
-  padding-bottom: 30px;
-  font-size: 36px;
-  color: #d6b161;
-}
-.about #content .feature p {
-  color: white;
 }
 .about #content .gray-bg {
   padding: 100px 0;

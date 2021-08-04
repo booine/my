@@ -1,0 +1,23 @@
+.service #header {
+  position: absolute;
+  width: 100%;
+}
+.service #content .header {
+  background-image: url(https://dummyimage.com/1920x1080/f5f5f5/ffffff);
+}
+.service #content .services {
+  padding: 100px 0;
+}
+.service #content .services .full-col > div {
+  padding: 0;
+  padding: 50px;
+}
+.service #content .services .full-col > div:hover {
+  background-color: black;
+}
+.service #content .services .full-col > div:hover .title {
+  color: white;
+}
+.service #content .services .full-col > div:hover i {
+  color: #d6b161;
+}

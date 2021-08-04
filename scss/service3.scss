@@ -1,0 +1,38 @@
+@use 'basic';
+
+.service {
+    #header {
+        position: absolute;
+        width: 100%;
+    }
+
+    #content {
+        .header {
+            background-image: url(https://dummyimage.com/1920x1080/f5f5f5/ffffff);
+        }
+
+        .services {
+            padding: 100px 0;
+
+            .full-col {
+                >div {
+                    padding: 0;
+                    padding: 50px;
+
+                    &:hover {
+                        background-color: black;
+
+                        .title {
+                            color: white;
+                        }
+
+                        i {
+                            color: basic.$branding-color;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}

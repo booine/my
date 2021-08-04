@@ -1,6 +1,7 @@
 @use 'about';
 @use 'ourclients';
 @use 'ourteam';
+@use 'service3';
 @use 'basic';
 // @use 'basic'，凡是引入變數的partial，還需要在變數前方加上「變數檔案的namespace.」-->「 basic.+變數名稱 」，例如：「 basic.$gray-text 」，才能compile成功唷～
 // 另外，語法 as *-->「@use 'basic' as *」 雖讓你可以不需使用 namespace. 就可存取變數，但也會造成維護不易，特別是專案越來越複雜之下，當變數一多容易產生命名的衝突。
@@ -60,6 +61,16 @@ p {
 
 .row {
     margin: 0 -10px;
+
+    &.bordered {
+        >div {
+            border: 1px solid #f2f2f2;
+            margin-top: -1px;
+            margin-left: -1px;
+        }
+
+
+    }
 }
 
 .col-2,
@@ -119,40 +130,6 @@ p {
     }
 }
 
-
-
-/* header */
-#logo {
-    float: left;
-}
-
-#nav {
-    float: right;
-    text-transform: uppercase;
-    line-height: 100px;
-
-    li {
-        float: left;
-        height: 100px;
-    }
-
-    a {
-        padding: 0 12px;
-        text-decoration: none;
-        font-size: 13px;
-        color: #333;
-    }
-
-    .active a {
-        color: basic.$branding-color;
-    }
-}
-
-.boundary::after {
-    content: "|";
-    padding: 0 12px;
-}
-
 .progress-bar {
     background: #eae8e8;
     margin-bottom: 50px;
@@ -198,6 +175,80 @@ p {
     }
 }
 
+.feature-brief {
+    text-align: center;
+
+    &.white {
+        color: white;
+
+        i {
+
+            color: basic.$branding-color;
+        }
+
+        p {
+            color: white;
+        }
+    }
+
+    &.black {
+        color: black;
+
+        i {
+
+            color: black;
+        }
+
+        p {
+            color: #7e7e7e;
+        }
+    }
+
+    i {
+        display: block;
+        padding-bottom: 30px;
+        font-size: 36px;
+
+    }
+
+}
+
+
+
+/* header */
+#logo {
+    float: left;
+}
+
+#nav {
+    float: right;
+    text-transform: uppercase;
+    line-height: 100px;
+
+    li {
+        float: left;
+        height: 100px;
+    }
+
+    a {
+        padding: 0 12px;
+        text-decoration: none;
+        font-size: 13px;
+        color: #333;
+    }
+
+    .active a {
+        color: basic.$branding-color;
+    }
+}
+
+.boundary::after {
+    content: "|";
+    padding: 0 12px;
+}
+
+
+
 /* content */
 #content {
     >div {
@@ -227,6 +278,11 @@ p {
         letter-spacing: 2px;
         font-weight: normal;
         font-size: 24px;
+
+        &.size {
+            font-size: 18px;
+            letter-spacing: 1px;
+        }
     }
 
     div.header {
