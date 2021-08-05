@@ -76,7 +76,9 @@ p {
 .col-2,
 .col-3,
 .col-4,
+.col-5,
 .col-6,
+.col-7,
 .col-12 {
     float: left;
     padding: 0 30px;
@@ -94,8 +96,16 @@ p {
     width: 33.3333333%;
 }
 
+.col-5 {
+    width: (100%/12)*5;
+}
+
 .col-6 {
     width: 50%;
+}
+
+.col-7 {
+    width: (100%/12)*7;
 }
 
 .col-12 {
@@ -115,17 +125,48 @@ p {
 
     &.bordered {
         border: 1px solid black;
+
+        &.light-border {
+            border: 1px solid #f2f2f2;
+        }
+
+        &.full-width {
+            width: 100%;
+        }
+    }
+
+    &.rounded {
+        border-radius: 5px;
     }
 
     &.black {
         border: 0px;
-        border-radius: 3px;
         background: #222;
         color: white;
         transition: all .2s linear;
 
         &:hover {
             background: basic.$branding-color;
+        }
+    }
+
+    &.com-white,
+    &.rec-white {
+        margin-top: 30px;
+        background: #fff;
+        border: 1px solid #f2f2f2;
+        color: black;
+        transition: all .2s linear;
+
+        &:hover {
+            border: 1px solid black;
+            background: black;
+            color: white;
+
+            &.rec-white {
+                border: 1px solid basic.$branding-color;
+                background: basic.$branding-color;
+            }
         }
     }
 }
@@ -213,6 +254,79 @@ p {
 
 }
 
+.title-block {
+    margin-bottom: 30px;
+}
+
+.pricing {
+    .package {
+        text-align: center;
+        padding: 0 15px;
+
+        .box {
+            padding: 50px;
+            border: 1px solid #f2f2f2;
+        }
+
+        .name {
+            margin: 0;
+            padding-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: normal;
+            font-size: 16px;
+        }
+
+        .value {
+            padding: 25px 0;
+            border-top: 1px solid #f2f2f2;
+            border-bottom: 1px solid #f2f2f2;
+
+            .price {
+                font-size: 42px;
+            }
+
+            .decimal {
+                margin-left: -10px;
+                font-size: 16px;
+            }
+
+            .duration {
+                text-transform: uppercase;
+                font-size: 12px;
+            }
+        }
+
+        .features {
+            padding: 30px 0;
+
+            li {
+                margin-bottom: 15px;
+            }
+        }
+
+        &.recomments {
+
+            .box {
+                background: #222;
+                color: white;
+            }
+
+            .name {
+                color: basic.$branding-color;
+            }
+
+            .value {
+                border-color: rgba(255, 255, 255, .2);
+            }
+
+            .features {
+                color: #7d7d7d;
+            }
+        }
+    }
+
+}
 
 
 /* header */
@@ -415,6 +529,31 @@ p {
             }
         }
 
+    }
+
+    .feature {
+        padding: 100px 0;
+
+        .feature-item {
+            padding-left: 80px;
+            margin-bottom: 80px;
+            position: relative;
+
+            i {
+                position: absolute;
+                top: 0;
+                left: 0;
+                font-size: 36px;
+            }
+
+            .title {
+                font-size: 18px;
+            }
+
+            .desc {
+                color: basic.$gray-text;
+            }
+        }
     }
 
 }
