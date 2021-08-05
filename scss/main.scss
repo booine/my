@@ -1,6 +1,6 @@
 @use 'about';
-@use 'ourclients';
-@use 'ourteam';
+@use 'ourclients2';
+@use 'ourteam2';
 @use 'service3';
 @use 'basic';
 // @use 'basic'，凡是引入變數的partial，還需要在變數前方加上「變數檔案的namespace.」-->「 basic.+變數名稱 」，例如：「 basic.$gray-text 」，才能compile成功唷～
