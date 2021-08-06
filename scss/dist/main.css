@@ -222,6 +222,30 @@
   margin: 0px;
 }
 
+.contact #content .content {
+  padding: 100px 0;
+}
+.contact #content .title {
+  font-size: 18px;
+}
+.contact #content p {
+  padding-bottom: 30px;
+}
+.contact #content .contact-info {
+  text-transform: capitalize;
+  color: #7e7e7e;
+}
+.contact #content .contact-info .info {
+  margin-bottom: 10px;
+}
+.contact #content .contact-info a {
+  text-decoration: none;
+  color: #7e7e7e;
+}
+.contact #content .question .col-12 {
+  padding: 0 15px;
+}
+
 * {
   box-sizing: border-box;
   font-family: "Source Sans Pro", sans-serif;
@@ -283,6 +307,7 @@ p {
 .col-5,
 .col-6,
 .col-7,
+.col-8,
 .col-12 {
   float: left;
   padding: 0 30px;
@@ -312,6 +337,10 @@ p {
   width: 58.3333333333%;
 }
 
+.col-8 {
+  width: 66.6666666667%;
+}
+
 .col-12 {
   width: 100%;
 }
@@ -321,6 +350,7 @@ p {
   margin-top: 30px;
   padding: 15px 30px;
   background: #fff;
+  border: none;
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 1px;
@@ -485,6 +515,33 @@ p {
 }
 .pricing .package.recomments .features {
   color: #7d7d7d;
+}
+
+.contact-form {
+  text-transform: uppercase;
+  margin-top: 50px;
+}
+.contact-form .col-6,
+.contact-form .col-12 {
+  margin-bottom: 15px;
+  padding: 0 15px;
+}
+.contact-form label {
+  display: inline-block;
+  margin-bottom: 5px;
+  color: #7e7e7e;
+}
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 6px 12px;
+  border: 1px solid #f2f2f2;
+}
+.contact-form textarea {
+  height: 95px;
+}
+.contact-form .button {
+  margin-top: 0;
 }
 
 /* header */

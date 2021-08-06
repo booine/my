@@ -1,0 +1,23 @@
+.contact #content .content {
+  padding: 100px 0;
+}
+.contact #content .title {
+  font-size: 18px;
+}
+.contact #content p {
+  padding-bottom: 30px;
+}
+.contact #content .contact-info {
+  text-transform: capitalize;
+  color: #7e7e7e;
+}
+.contact #content .contact-info .info {
+  margin-bottom: 10px;
+}
+.contact #content .contact-info a {
+  text-decoration: none;
+  color: #7e7e7e;
+}
+.contact #content .question .col-12 {
+  padding: 0 15px;
+}
