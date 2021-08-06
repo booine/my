@@ -40,5 +40,56 @@
 
     }
 
+    #footer.dark {
+        .box-parent {
+            padding: 40px 0;
+            text-align: center;
+
+            .a-block {
+                display: block;
+            }
+
+            img {
+                margin: 0 auto;
+            }
+
+            .box2 {
+                margin: 50px 0 50px 0;
+                display: inline-block;
+
+            }
+
+            .social-media,
+            .copyright {
+                float: none;
+            }
+
+            .social-media {
+                a {
+                    color: white;
+                    border-color: white;
+                    background: #222;
+                    transition: all .3s linear;
+
+                    &:hover {
+                        color: black;
+                        background: white;
+                    }
+                }
+            }
+
+            .copyright {
+                display: block;
+                border-top: 2px dashed #7e7e7e;
+                padding-top: 40px;
+
+                .title {
+                    color: basic.$gray-text;
+                }
+
+            }
+        }
+    }
+
 
 }
