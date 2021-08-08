@@ -3,6 +3,7 @@
 @use 'ourteam2';
 @use 'service3';
 @use 'contact3';
+@use 'career';
 @use 'basic';
 // @use 'basic'，凡是引入變數的partial，還需要在變數前方加上「變數檔案的namespace.」-->「 basic.+變數名稱 」，例如：「 basic.$gray-text 」，才能compile成功唷～
 // 另外，語法 as *-->「@use 'basic' as *」 雖讓你可以不需使用 namespace. 就可存取變數，但也會造成維護不易，特別是專案越來越複雜之下，當變數一多容易產生命名的衝突。
@@ -144,6 +145,17 @@ p {
 
     &.rounded {
         border-radius: 5px;
+    }
+
+    &.gold {
+        border: 0px;
+        background: basic.$branding-color;
+        color: white;
+        transition: all .2s linear;
+
+        &:hover {
+            background: #222;
+        }
     }
 
     &.black {
@@ -337,7 +349,8 @@ p {
 
 }
 
-.contact-form {
+.contact-form,
+.career-form {
     text-transform: uppercase;
     margin-top: 50px;
 
@@ -354,7 +367,8 @@ p {
     }
 
     input,
-    textarea {
+    textarea,
+    select {
         width: 100%;
         padding: 6px 12px;
         border: 1px solid #e5e5e5;
@@ -364,10 +378,36 @@ p {
         height: 95px;
     }
 
+    select {
+        text-transform: capitalize;
+        font-size: 14px;
+        color: #555;
+    }
+
     .button {
         margin-top: 0;
     }
 
+}
+
+.career-form {
+    text-transform: capitalize;
+
+    .col-6,
+    .col-12 {
+        padding: 0 30px;
+    }
+
+    label {
+        color: #323232;
+    }
+
+    input,
+    textarea,
+    select {
+        margin-bottom: 30px;
+        border-radius: 4px;
+    }
 }
 
 

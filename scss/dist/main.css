@@ -282,6 +282,39 @@
   color: #7e7e7e;
 }
 
+.career #content .careers,
+.career #content .apply-now {
+  padding: 100px 0;
+}
+.career #content .careers .col-6 {
+  margin-bottom: 30px;
+}
+.career #content .careers .bordered {
+  padding: 50px 30px;
+  border: 1px solid #f2f2f2;
+}
+.career #content .careers .bordered a {
+  display: inline-block;
+  margin-top: 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #cbcbcb;
+  transition: all 0.3s;
+}
+.career #content .careers .bordered a::after {
+  font-family: "fontello";
+  content: "";
+  padding-left: 15px;
+}
+.career #content .careers .bordered a:hover {
+  color: black;
+}
+.career #content .col-center {
+  display: inline-block;
+  margin-top: 30px;
+  text-align: center;
+}
+
 * {
   box-sizing: border-box;
   font-family: "Source Sans Pro", sans-serif;
@@ -404,6 +437,15 @@ p {
 }
 .button.rounded {
   border-radius: 5px;
+}
+.button.gold {
+  border: 0px;
+  background: #d6b161;
+  color: white;
+  transition: all 0.2s linear;
+}
+.button.gold:hover {
+  background: #222;
 }
 .button.black {
   border: 0px;
@@ -553,31 +595,64 @@ p {
   color: #7d7d7d;
 }
 
-.contact-form {
+.contact-form,
+.career-form {
   text-transform: uppercase;
   margin-top: 50px;
 }
 .contact-form .col-6,
-.contact-form .col-12 {
+.contact-form .col-12,
+.career-form .col-6,
+.career-form .col-12 {
   margin-bottom: 15px;
   padding: 0 15px;
 }
-.contact-form label {
+.contact-form label,
+.career-form label {
   display: inline-block;
   margin-bottom: 5px;
   color: #7e7e7e;
 }
 .contact-form input,
-.contact-form textarea {
+.contact-form textarea,
+.contact-form select,
+.career-form input,
+.career-form textarea,
+.career-form select {
   width: 100%;
   padding: 6px 12px;
   border: 1px solid #e5e5e5;
 }
-.contact-form textarea {
+.contact-form textarea,
+.career-form textarea {
   height: 95px;
 }
-.contact-form .button {
+.contact-form select,
+.career-form select {
+  text-transform: capitalize;
+  font-size: 14px;
+  color: #555;
+}
+.contact-form .button,
+.career-form .button {
   margin-top: 0;
+}
+
+.career-form {
+  text-transform: capitalize;
+}
+.career-form .col-6,
+.career-form .col-12 {
+  padding: 0 30px;
+}
+.career-form label {
+  color: #323232;
+}
+.career-form input,
+.career-form textarea,
+.career-form select {
+  margin-bottom: 30px;
+  border-radius: 4px;
 }
 
 /* header */
